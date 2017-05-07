@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" href="common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">
+                <img src="./images/music.png" alt="">
+            </div>
+            <div class="log">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="bg">
+                <img src="./images/bg.png" alt="" class="car">
+            </div>
+            <div class="rule">
+                <span>活动规则</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <div class="input">
+            <input type="text" class="username" placeholder="输入您的姓名">
+            <input type="text" class="tel" placeholder="输入您的电话号码">
+        </div>
+        <div class="btn">
+            <img src="./images/icon.png" alt="">
+            <span>预约试驾</span>
+        </div>
+    
+    </div>
+        <div class="wrapper_hide hide">
+            <div class="head">
+                <img src="./images/rule.png" alt="">
+            </div>
+            <div class="explain">
+                <div class="close">
+                </div>
+                <div class="active-time">
+                    <span>活动时间:</span>
+                    <h3>2017/5/01 00:00 - 2017/05/31 23.59</h3>
+                </div>
+                <div class="active-detail">
+                    <span>活动详情:</span>
+                    <span>填写资料,马上领取520购车惠。更可参与秒杀。抢最高5200购车基金。</span>
+                    <h3>首付5200零息贷、11800包牌贷、一证优速贷等多种优惠购车选择</h3>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js"></script>
+    <script>
+        
+     $('.rule').click(()=>{
+        $('.wrapper_hide').removeClass('hide');
+     })
+     
+     $('.close').click(()=>{
+          $('.wrapper_hide').addClass('hide');
+     })
+
+    </script>
+
+</body>
+
+</html>
